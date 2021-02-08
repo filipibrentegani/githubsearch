@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GitHubSearch">
         <activity
-            android:name=".SplashActivity"
+            android:name=".splashscreen.presentation.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/SplashScreenTheme">
             <intent-filter>
@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".findrepositoriesscreen.presentation.FindRepositoriesActivity"></activity>
     </application>
 
 </manifest>

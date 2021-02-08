@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    android:padding="8dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:id="@+id/tvRepoName"
+            style="@style/Text.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="githubsearch" />
+
+        <TextView
+            android:id="@+id/tvRepoFullName"
+            style="@style/Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintBottom_toBottomOf="@id/tvRepoName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvRepoName"
+            tools:text="filipibrentegani/githubsearch" />
+
+        <ImageView
+            android:id="@+id/imOwnerAvatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@id/tvRepoName"
+            app:layout_constraintTop_toBottomOf="@id/tvRepoFullName" />
+
+        <TextView
+            android:id="@+id/tvOwner"
+            style="@style/Text.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ellipsize="end"
+            app:layout_constraintBottom_toBottomOf="@id/imOwnerAvatar"
+            app:layout_constraintStart_toEndOf="@id/imOwnerAvatar"
+            app:layout_constraintTop_toTopOf="@id/imOwnerAvatar"
+            tools:text="filipibrentegani" />
+
+        <TextView
+            android:id="@+id/tvHasWiki"
+            style="@style/Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/has_wiki"
+            android:textColor="@color/blue_a700"
+            app:layout_constraintBottom_toBottomOf="@id/tvOwner"
+            app:layout_constraintEnd_toEndOf="@id/tvRepoFullName"
+            app:layout_constraintStart_toEndOf="@id/tvOwner"
+            app:layout_constraintTop_toTopOf="@id/tvOwner" />
+
+        <TextView
+            android:id="@+id/tvLanguage"
+            style="@style/Text.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@id/tvRepoFullName"
+            app:layout_constraintStart_toStartOf="@id/tvRepoName"
+            app:layout_constraintTop_toBottomOf="@id/imOwnerAvatar"
+            tools:text="Kotlin" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            style="@style/Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            app:layout_constraintEnd_toEndOf="@id/tvRepoFullName"
+            app:layout_constraintStart_toStartOf="@id/tvRepoName"
+            app:layout_constraintTop_toBottomOf="@id/tvLanguage"
+            tools:text="GitHub Search" />
+
+        <TextView
+            android:id="@+id/tvRepositoryUrl"
+            style="@style/Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintEnd_toEndOf="@id/tvRepoFullName"
+            app:layout_constraintStart_toStartOf="@id/tvRepoName"
+            app:layout_constraintTop_toBottomOf="@id/tvDescription"
+            tools:text="https://github.com/filipibrentegani/githubsearch" />
+
+        <TextView
+            android:id="@+id/tvHomePage"
+            style="@style/Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@id/tvRepoFullName"
+            app:layout_constraintStart_toStartOf="@id/tvRepoName"
+            app:layout_constraintTop_toBottomOf="@id/tvRepositoryUrl"
+            tools:text="https://www.google.com.br" />
+
+        <TextView
+            android:id="@+id/tvLicense"
+            style="@style/Text.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/tvRepoFullName"
+            app:layout_constraintStart_toStartOf="@id/tvRepoName"
+            app:layout_constraintTop_toBottomOf="@id/tvHomePage"
+            tools:text="Apache License 2.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     android:animateLayoutChanges="true"
     android:background="@color/indigo_900"
-    tools:context=".SplashActivity">
+    tools:context=".splashscreen.presentation.SplashActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ivIcon"
         android:layout_width="128dp"
         android:layout_height="128dp"
         android:src="@drawable/ic_manage_search"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvAppName"
         style="@style/Text.Large"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,6 +28,6 @@
         android:textColor="@color/blue_50"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView" />
+        app:layout_constraintTop_toBottomOf="@id/ivIcon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
